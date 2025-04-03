@@ -357,7 +357,17 @@
     <param pos="0" name="service.product" value="MailEnable"/>
     <param pos="0" name="service.cpe23" value="cpe:/a:mailenable:mailenable:-"/>
   </fingerprint>
-
+  
+  <fingerprint pattern="^Mail Toaster \(Dovecot\) ready\.$">
+    <description>Dovecot Secure POP Server - Mail Toaster variant</description>
+    <example>Mail Toaster (Dovecot) ready.</example>
+    <param pos="0" name="service.vendor" value="Dovecot"/>
+    <param pos="0" name="service.family" value="Dovecot"/>
+    <param pos="0" name="service.product" value="Dovecot"/>
+    <param pos="0" name="service.cpe23" value="cpe:/a:dovecot:dovecot:-"/>
+    <param pos="0" name="os.vendor" value="Mail Toaster"/>
+  </fingerprint>
+  
   <!--
 ; Mandrake 8.1 - uses UW IMAP
 ; +OK POP3 mandrake81-f540k v2000.70mdk server ready

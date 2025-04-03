@@ -2252,6 +2252,28 @@
     <param pos="0" name="hw.device" value="Firewall"/>
     <param pos="0" name="hw.family" value="Unified Security Gateway"/>
   </fingerprint>
+  
+  <fingerprint pattern="^AzureSSH_([\d\.]+)$">
+    <description>Microsoft Azure SSH Server</description>
+    <example>AzureSSH_1.0.0</example>
+    <param pos="0" name="service.vendor" value="Microsoft"/>
+    <param pos="0" name="service.family" value="AzureSSH"/>
+    <param pos="0" name="service.product" value="AzureSSH"/>
+    <param pos="1" name="service.version"/>
+    <param pos="0" name="service.cpe23" value="cpe:/a:microsoft:azuressh:%1"/>
+  </fingerprint>
+
+  <fingerprint pattern="^Maverick_SSHD(?:[_-]v?([\d\.]+))?$">
+    <description>Maverick SSH Server</description>
+    <example>Maverick_SSHD</example>
+    <example>Maverick_SSHD_1.7.2</example>
+    <example>Maverick_SSHD-v2.3.1</example>
+    <param pos="0" name="service.vendor" value="Maverick"/>
+    <param pos="0" name="service.family" value="Maverick SSHD"/>
+    <param pos="0" name="service.product" value="Maverick_SSHD"/>
+    <param pos="1" name="service.version"/>
+    <param pos="0" name="service.cpe23" value="cpe:/a:maverick:maverick_sshd:%1"/>
+  </fingerprint>
 
   <!--
 1.2.22j4rad

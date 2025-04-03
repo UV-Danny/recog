@@ -12,4 +12,13 @@
     <param pos="0" name="service.cpe23" value="cpe:/a:php:php:{service.version}"/>
   </fingerprint>
 
+  <fingerprint pattern="^Next\.js$">
+    <description>Next.js</description>
+    <example service.product="Next.js">Next.js</example>
+    <param pos="0" name="service.vendor" value="Vercel"/>
+    <param pos="0" name="service.family" value="Next.js"/>
+    <param pos="0" name="service.product" value="Next.js"/>
+    <param pos="0" name="service.cpe23" value="cpe:/a:vercel:next.js"/>
+  </fingerprint>
+
 </fingerprints>

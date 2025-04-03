@@ -5190,4 +5190,13 @@
     <param pos="0" name="hw.device" value="Device"/>
   </fingerprint>
 
+  <fingerprint pattern="^Flywheel/(\d+(?:\.\d+)*)$">
+    <description>Flywheel - Managed WordPress Hosting Platform</description>
+    <example service.version="5.1.0">Flywheel/5.1.0</example>
+    <param pos="0" name="service.vendor" value="Flywheel"/>
+    <param pos="0" name="service.product" value="Flywheel"/>
+    <param pos="1" name="service.version"/>
+    <param pos="0" name="service.cpe23" value="cpe:/a:flywheel:flywheel:{service.version}"/>
+  </fingerprint>
+
 </fingerprints>
